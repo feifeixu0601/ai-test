@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>动态页面演示</title>
+</head>
+<body>
+    <h1>职位列表（动态加载）</h1>
+
+    <!-- 这个容器在源码中是空的，数据是 JavaScript 动态插入的 -->
+    <div id="job-list"></div>
+
+    <script>
+        // 这段 JavaScript 在页面加载后，动态创建职位数据并插入页面
+        var jobs = [
+            {"title": "AI测试工程师", "salary": "25-40K", "company": "智云科技"},
+            {"title": "高级AI测试开发", "salary": "35-60K", "company": "星辰互联"},
+            {"title": "大模型测试工程师", "salary": "30-50K", "company": "深智科技"}
+        ];
+
+        var container = document.getElementById("job-list");
+
+        for (var i = 0; i < jobs.length; i++) {
+            var div = document.createElement("div");
+            div.className = "job-item";
+
+            var h3 = document.createElement("h3");
+            h3.className = "job-title";
+            h3.textContent = jobs[i].title;
+
+            var salarySpan = document.createElement("span");
+            salarySpan.className = "salary";
+            salarySpan.textContent = jobs[i].salary;
+
+            var companySpan = document.createElement("span");
+            companySpan.className = "company";
+            companySpan.textContent = jobs[i].company;
+
+            div.appendChild(h3);
+            div.appendChild(salarySpan);
+            div.appendChild(companySpan);
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>

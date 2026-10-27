@@ -1,0 +1,223 @@
+[
+  {
+    "title": "AI测试工程师",
+    "salary_raw": "25-40K",
+    "salary_low": 25000,
+    "salary_high": 40000,
+    "salary_type": "K",
+    "company": "智云科技",
+    "location": "北京",
+    "experience": "3-5年",
+    "education": "本科",
+    "tags": [
+      "Python",
+      "机器学习",
+      "自动化测试",
+      "pytest"
+    ],
+    "description": "1. 负责AI模型的功能测试、性能测试和鲁棒性测试；2. 设计自动化测试用例，搭建测试框架；3. 分析模型评估指标，输出测试报告；4. 与算法团队协作，定位模型问题。"
+  },
+  {
+    "title": "高级AI测试开发",
+    "salary_raw": "35-60K",
+    "salary_low": 35000,
+    "salary_high": 60000,
+    "salary_type": "K",
+    "company": "星辰互联",
+    "location": "上海",
+    "experience": "5-10年",
+    "education": "硕士",
+    "tags": [
+      "Python",
+      "大模型",
+      "LLM评测",
+      "NLP",
+      "测试开发"
+    ],
+    "description": "1. 负责大语言模型评测体系建设；2. 设计自动化评测方案和工具；3. 制定模型质量标准和测试规范；4. 推动AI测试技术的研究与落地。"
+  },
+  {
+    "title": "大模型测试工程师",
+    "salary_raw": "30-50K",
+    "salary_low": 30000,
+    "salary_high": 50000,
+    "salary_type": "K",
+    "company": "深智科技",
+    "location": "杭州",
+    "experience": "3-5年",
+    "education": "本科",
+    "tags": [
+      "Prompt Engineering",
+      "RAG",
+      "评测框架",
+      "Python"
+    ],
+    "description": "1. 负责大语言模型的综合评测；2. 设计幻觉检测方案，评估输出事实一致性；3. 测试RAG系统的检索准确率和答案质量；4. 搭建模型评测平台和工具。"
+  },
+  {
+    "title": "机器学习测试工程师",
+    "salary_raw": "20-35K",
+    "salary_low": 20000,
+    "salary_high": 35000,
+    "salary_type": "K",
+    "company": "蓝图AI",
+    "location": "深圳",
+    "experience": "1-3年",
+    "education": "本科",
+    "tags": [
+      "Python",
+      "TensorFlow",
+      "数据分析",
+      "模型测试"
+    ],
+    "description": "1. 负责机器学习模型的离线评测；2. 执行模型上线前的质量验证；3. 编写测试脚本，维护测试数据集；4. 跟踪模型效果指标，发现质量问题及时反馈。"
+  },
+  {
+    "title": "AI质量保障工程师",
+    "salary_raw": "40-70K",
+    "salary_low": 40000,
+    "salary_high": 70000,
+    "salary_type": "K",
+    "company": "云图网络",
+    "location": "北京",
+    "experience": "5-10年",
+    "education": "硕士",
+    "tags": [
+      "Python",
+      "模型评测",
+      "A/B测试",
+      "CI/CD",
+      "质量保障"
+    ],
+    "description": "1. 负责AI产品的质量保障体系建设；2. 设计A/B实验方案，分析实验结果；3. 建设模型回归测试流水线；4. 制定AI产品质量标准和发布流程。"
+  },
+  {
+    "title": "NLP测试工程师",
+    "salary_raw": "25-45K",
+    "salary_low": 25000,
+    "salary_high": 45000,
+    "salary_type": "K",
+    "company": "语知科技",
+    "location": "广州",
+    "experience": "3-5年",
+    "education": "本科",
+    "tags": [
+      "NLP",
+      "Python",
+      "BLEU",
+      "ROUGE",
+      "文本评测"
+    ],
+    "description": "1. 负责NLP模型的评测工作；2. 评估文本分类、机器翻译、文本生成等任务效果；3. 构建和维护测试数据集；4. 优化评测指标体系。"
+  },
+  {
+    "title": "CV测试工程师",
+    "salary_raw": "22-38K",
+    "salary_low": 22000,
+    "salary_high": 38000,
+    "salary_type": "K",
+    "company": "视觉智能",
+    "location": "成都",
+    "experience": "1-3年",
+    "education": "本科",
+    "tags": [
+      "计算机视觉",
+      "Python",
+      "图像处理",
+      "模型测试"
+    ],
+    "description": "1. 负责图像识别模型的测试工作；2. 执行模型精度测试和性能测试；3. 构建测试数据集，分析 bad case；4. 参与模型鲁棒性测试和对抗样本测试。"
+  },
+  {
+    "title": "自动化测试开发（AI方向）",
+    "salary_raw": "28-45K",
+    "salary_low": 28000,
+    "salary_high": 45000,
+    "salary_type": "K",
+    "company": "数码先锋",
+    "location": "北京",
+    "experience": "3-5年",
+    "education": "本科",
+    "tags": [
+      "Python",
+      "pytest",
+      "Selenium",
+      "Docker",
+      "测试框架"
+    ],
+    "description": "1. 负责AI产品的自动化测试框架设计与开发；2. 开发接口自动化测试脚本；3. 搭建持续集成测试环境；4. 推动测试效率提升和质量改进。"
+  },
+  {
+    "title": "AI测试实习生",
+    "salary_raw": "200-300元/天",
+    "salary_low": 200,
+    "salary_high": 300,
+    "salary_type": "天",
+    "company": "云图网络",
+    "location": "上海",
+    "experience": "在校生",
+    "education": "本科",
+    "tags": [
+      "Python",
+      "数据分析",
+      "测试基础"
+    ],
+    "description": "1. 协助团队进行AI模型评测；2. 参与测试数据标注和数据清洗；3. 编写简单的测试脚本；4. 参与测试报告整理和分析。"
+  },
+  {
+    "title": "数据质量工程师",
+    "salary_raw": "25-40K",
+    "salary_low": 25000,
+    "salary_high": 40000,
+    "salary_type": "K",
+    "company": "深智科技",
+    "location": "杭州",
+    "experience": "3-5年",
+    "education": "本科",
+    "tags": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "数据清洗",
+      "数据标注"
+    ],
+    "description": "1. 负责训练数据和测试数据的质量管控；2. 设计数据质量检查规则和自动化工具；3. 监控数据分布变化，及时发现数据漂移；4. 协调数据标注团队，保障标注质量。"
+  },
+  {
+    "title": "大模型安全测试工程师",
+    "salary_raw": "45-75K",
+    "salary_low": 45000,
+    "salary_high": 75000,
+    "salary_type": "K",
+    "company": "星辰互联",
+    "location": "北京",
+    "experience": "5-10年",
+    "education": "硕士",
+    "tags": [
+      "大模型安全",
+      "对抗攻击",
+      "Red Team",
+      "Python"
+    ],
+    "description": "1. 负责大模型的安全性评测；2. 开展红队测试，发现模型安全风险；3. 设计对抗攻击方案，评估模型鲁棒性；4. 制定大模型安全测试标准和规范。"
+  },
+  {
+    "title": "LLM评测工程师",
+    "salary_raw": "40-65K",
+    "salary_low": 40000,
+    "salary_high": 65000,
+    "salary_type": "K",
+    "company": "智云科技",
+    "location": "北京",
+    "experience": "3-5年",
+    "education": "硕士",
+    "tags": [
+      "LLM",
+      "评测方法论",
+      "Python",
+      "Prompt",
+      "RAG"
+    ],
+    "description": "1. 负责大语言模型的综合评测；2. 研究评测方法论，优化评测流程；3. 开发评测工具和自动化脚本；4. 输出评测报告，为模型选型提供数据支撑。"
+  }
+]

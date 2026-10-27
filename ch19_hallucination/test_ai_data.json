@@ -1,0 +1,9 @@
+[
+  {
+    "id": "MATH-01",
+    "question": "计算三重积分 ∭(x+y+z)dV，其中Ω是单位立方体 [0,1]×[0,1]×[0,1]",
+    "answer": "",
+    "context_keyword": "三重积分",
+    "source": "待 API 获取"
+  }
+]
