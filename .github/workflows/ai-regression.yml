@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 4 * * *'  # 每天北京时间 12 点  UTC 时间，北京时间 = UTC + 8
+    - cron: '0 7 * * *'  # 每天北京时间 15 点  UTC 时间，北京时间 = UTC + 8
 
 jobs:
   regression:
