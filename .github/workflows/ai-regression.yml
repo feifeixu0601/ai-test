@@ -2,9 +2,9 @@ name: AI 质量回归
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
   schedule:
     - cron: '0 7 * * *'  # 每天北京时间 15 点  UTC 时间，北京时间 = UTC + 8
 
