@@ -1,0 +1,28 @@
+[
+  {
+    "id": "CMP-01",
+    "question": "公司年假有多少天？",
+    "fact_points": [
+      {"name": "年假天数", "variants": ["12天", "12 天"]},
+      {"name": "满5年加2天", "variants": ["5年", "5 年"]},
+      {"name": "最多20天", "variants": ["20天", "20 天"]}
+    ]
+  },
+  {
+    "id": "CMP-02",
+    "question": "差旅报销的餐补标准是多少？",
+    "fact_points": [
+      {"name": "一线城市150元", "variants": ["150"]},
+      {"name": "二线城市120元", "variants": ["120"]}
+    ]
+  },
+  {
+    "id": "CMP-03",
+    "question": "P6 晋升 P7 需要什么条件？",
+    "fact_points": [
+      {"name": "入职满1年", "variants": ["1年", "1 年"]},
+      {"name": "绩效B+", "variants": ["B+"]},
+      {"name": "S级项目", "variants": ["S级", "S 级"]}
+    ]
+  }
+]

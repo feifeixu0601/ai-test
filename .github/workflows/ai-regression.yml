@@ -1,0 +1,65 @@
+name: AI 质量回归
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 4 * * *'  # 每天北京时间 12 点  UTC 时间，北京时间 = UTC + 8
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ====== 1. 准备环境 ======
+      - uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: pip install pytest pytest-timeout allure-pytest openai requests
+
+      - name: 安装 Allure
+        run: |
+          wget -q https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz
+          tar -xzf allure-2.27.0.tgz -C /opt/
+          echo "/opt/allure-2.27.0/bin" >> $GITHUB_PATH
+
+      # ====== 2. 执行测试（测试代码在第 24 篇的目录） ======
+      - name: 运行回归测试
+        working-directory: ch24_pytest_framework
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: pytest
+        continue-on-error: true  # 测试失败不中断，继续生成报告
+
+      # ====== 3. 生成报告（报告输出到第 25 篇的目录） ======
+      - name: 生成 Allure 报告
+        if: always()
+        working-directory: ch25_cicd
+        run: allure generate reports -o allure-report --clean
+
+      # ====== 4. 质量门禁 ======
+      - name: 质量门禁
+        working-directory: ch25_cicd
+        run: python quality_gate.py
+        env:
+          REPORTS_DIR: reports
+          DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+       #  WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
+       #  MAIL_USER: ${{ secrets.MAIL_USER }}
+       #  MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+       #  MAIL_TO: ${{ secrets.MAIL_TO }}
+
+      # ====== 5. 上传报告 ======
+      - name: 上传报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: ch25_cicd/allure-report

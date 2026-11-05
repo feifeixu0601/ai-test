@@ -1,0 +1,15 @@
+[
+  {
+    "id": "HALL-01",
+    "question": "鲁迅是谁？请介绍他的原名和籍贯。",
+    "fact_points": [
+      {"name": "原名", "variants": ["周树人"]},
+      {"name": "籍贯", "variants": ["绍兴", "浙江"]}
+    ]
+  },
+  {
+    "id": "HALL-02",
+    "question": "水的化学式是什么？",
+    "fact_points": [{"name": "化学式", "variants": ["H2O", "H₂O"]}]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "RAG-01",
+    "question": "公司年假有多少天？",
+    "expected_doc_id": "DOC-01",
+    "fact_points": [
+      {"name": "年假天数", "variants": ["12天", "12 天"]},
+      {"name": "满5年加2天", "variants": ["5年", "5 年", "2天", "2 天"]},
+      {"name": "最多20天", "variants": ["20天", "20 天"]}
+    ],
+    "expected_answer_keywords": ["12"]
+  },
+  {
+    "id": "RAG-02",
+    "question": "差旅报销的餐补标准是多少？",
+    "expected_doc_id": "DOC-02",
+    "fact_points": [
+      {"name": "一线城市150元", "variants": ["150"]},
+      {"name": "二线城市120元", "variants": ["120"]},
+      {"name": "一线城市住宿600元", "variants": ["600"]},
+      {"name": "二线城市住宿400元", "variants": ["400"]}
+    ],
+    "expected_answer_keywords": ["150"]
+  },
+  {
+    "id": "RAG-03",
+    "question": "工作时间是几点到几点？",
+    "expected_doc_id": "DOC-03",
+    "fact_points": [
+      {"name": "上班时间", "variants": ["9:00", "9点"]},
+      {"name": "下班时间", "variants": ["18:00", "18点"]},
+      {"name": "午休时间", "variants": ["12:00", "13:00"]}
+    ],
+    "expected_answer_keywords": ["9:00", "18:00"]
+  },
+  {
+    "id": "RAG-04",
+    "question": "P6 晋升 P7 需要什么条件？",
+    "expected_doc_id": "DOC-04",
+    "fact_points": [
+      {"name": "入职满1年", "variants": ["1年", "1 年"]},
+      {"name": "绩效B+", "variants": ["B+"]},
+      {"name": "S级项目", "variants": ["S级", "S 级"]}
+    ],
+    "expected_answer_keywords": ["B+"]
+  },
+  {
+    "id": "RAG-05",
+    "question": "每人每年有多少学习基金？",
+    "expected_doc_id": "DOC-05",
+    "fact_points": [
+      {"name": "基金金额", "variants": ["5000", "5,000"]}
+    ],
+    "expected_answer_keywords": ["5000"]
+  },
+  {
+    "id": "RAG-06",
+    "question": "离职时需要归还哪些物品？",
+    "expected_doc_id": "DOC-06",
+    "fact_points": [
+      {"name": "电脑", "variants": ["电脑", "笔记本"]},
+      {"name": "显示器", "variants": ["显示器"]},
+      {"name": "门禁卡", "variants": ["门禁卡"]},
+      {"name": "工牌", "variants": ["工牌", "工卡"]}
+    ],
+    "expected_answer_keywords": ["电脑"]
+  },
+  {
+    "id": "RAG-07",
+    "question": "公司有带薪病假吗？",
+    "expected_doc_id": null,
+    "fact_points": [
+      {"name": "承认未提及", "variants": ["未提及", "没有", "无法", "未找到"]}
+    ],
+    "expected_answer_keywords": ["未提及"]
+  },
+  {
+    "id": "RAG-08",
+    "question": "公司股票期权怎么分配？",
+    "expected_doc_id": null,
+    "fact_points": [
+      {"name": "承认未提及", "variants": ["未提及", "没有", "无法", "未找到"]}
+    ],
+    "expected_answer_keywords": ["未提及"]
+  },
+  {
+      "id": "RAG-09",
+      "question": "2026 年最新的年假制度是什么？",
+      "expected_doc_id": "DOC-01",
+      "expected_keywords": ["12天", "2025版", "2025 版", "建议确认"],
+      "expected_answer_keywords": ["2025"],
+      "note": "知识库只有 2025 版，回答应标注版本信息并提醒确认最新版"
+  }
+]
