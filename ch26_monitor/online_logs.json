@@ -1,0 +1,29 @@
+[
+  {
+    "question": "公司退货期是多久？",
+    "answer": "退货期 7 天，自签收之日起计算。",
+    "context": "自签收之日起 7 天内可无理由退货。",
+    "response_time": 2.1,
+    "user_dislike": false,
+    "total_tokens": 350,
+    "timestamp": "2025-11-11 14:30:00"
+  },
+  {
+    "question": "年假有多少天？",
+    "answer": "年假 12 天，每满 5 年增加 2 天。",
+    "context": "正式员工享有每年 12 天带薪年假。工龄每满 5 年增加 2 天。",
+    "response_time": 1.8,
+    "user_dislike": true,
+    "total_tokens": 280,
+    "timestamp": "2025-11-11 15:00:00"
+  },
+  {
+    "question": "报销标准是什么？",
+    "answer": "餐补每天 150 元。",
+    "context": "一线城市餐补每天 150 元。",
+    "response_time": 3.5,
+    "user_dislike": false,
+    "total_tokens": 420,
+    "timestamp": "2025-11-11 16:00:00"
+  }
+]

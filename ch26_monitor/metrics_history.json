@@ -1,0 +1,13 @@
+[
+  {
+    "total": 3,
+    "avg_response_time": 2.466666666666667,
+    "p95_response_time": 3.5,
+    "p99_response_time": 3.5,
+    "dislike_rate": 0.3333333333333333,
+    "total_tokens": 1050,
+    "est_cost": 0.01,
+    "date": "2026-11-17",
+    "hallucination_rate": 0.0
+  }
+]
